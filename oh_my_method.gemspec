@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = OhMyMethod::VERSION
   spec.authors       = ["siman-man"]
   spec.email         = ["k128585@ie.u-ryukyu.ac.jp"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Collection of we method.}
+  spec.description   = %q{Collection of we method.}
+  spec.homepage      = "https://github.com/siman-man/oh_my_method"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
