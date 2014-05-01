@@ -1,6 +1,6 @@
 # OhMyMethod
 
-TODO: Write a gem description
+This gem is collection of we methods.
 
 ## Installation
 
