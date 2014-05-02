@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Integer" do
+describe "Integer Class" do
   it "#plus?" do
     expect(-1.plus?).to eq false
     expect(0.plus?).to eq false
@@ -25,5 +25,11 @@ describe "Integer" do
     expect(4.combination(1)).to eq 4
     expect(4.combination(0)).to eq 1
     expect(10.combination(5)).to eq 252
+  end
+
+  it "#permutation" do
+    expect(3.permutation(0)).to eq 1
+    expect(3.permutation(2)).to eq 6
+    expect(20.permutation(5)).to eq 1860480
   end
 end

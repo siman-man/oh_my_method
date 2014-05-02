@@ -11,6 +11,10 @@ class Integer
     self.factorial/(k.factorial*(self-k).factorial)
   end
 
+  def permutation(k)
+    self.factorial/(self-k).factorial
+  end
+
   def factorial
     return 1 if self.zero?
     (1..self).inject(:*)
