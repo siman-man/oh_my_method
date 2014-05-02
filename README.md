@@ -1,4 +1,4 @@
-# OhMyMethod
+# Oh My Method
 
 This gem is collection of we methods.
 
