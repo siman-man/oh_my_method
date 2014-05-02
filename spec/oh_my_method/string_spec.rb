@@ -14,4 +14,10 @@ describe "String Class" do
     expect("hello".middle_with?("hel")).to eq false
     expect("ABABA".middle_with?("BAB")).to eq true
   end
+
+  it "sum_digit" do
+    expect("11111".sum_digit).to eq 5
+    expect("12321".sum_digit).to eq 9
+    expect("123456789".sum_digit).to eq 45
+  end
 end
