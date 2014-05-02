@@ -7,6 +7,10 @@ class Integer
     self < 0
   end
 
+  def combination(k)
+    self.factorial/(k.factorial*(self-k).factorial)
+  end
+
   def factorial
     return 1 if self.zero?
     (1..self).inject(:*)

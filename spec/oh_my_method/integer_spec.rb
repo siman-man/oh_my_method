@@ -20,4 +20,10 @@ describe "Integer" do
     expect(3.factorial).to eq 6
     expect(10.factorial).to eq 3628800
   end
+
+  it "#combination" do
+    expect(4.combination(1)).to eq 4
+    expect(4.combination(0)).to eq 1
+    expect(10.combination(5)).to eq 252
+  end
 end
