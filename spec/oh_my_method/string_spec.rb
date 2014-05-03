@@ -20,4 +20,14 @@ describe "String Class" do
     expect("12321".sum_digit).to eq 9
     expect("123456789".sum_digit).to eq 45
   end
+
+  it "#first" do
+    expect("Hello".first).to eq "H"
+    expect("".first).to eq nil
+  end
+
+  it "#last" do
+    expect("Hello".last).to eq "o"
+    expect("".last).to eq nil
+  end
 end

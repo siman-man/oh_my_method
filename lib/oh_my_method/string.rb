@@ -10,4 +10,12 @@ class String
   def sum_digit
     self.chars.map(&:to_i).inject(:+)
   end
+
+  def first
+    self[0]
+  end
+
+  def last
+    self[-1]
+  end
 end

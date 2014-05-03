@@ -15,3 +15,11 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+
+# Ignore junk file
+doc/
+**/*.swp
+*.swp
+**/*~
+*.*~
+*~
