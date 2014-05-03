@@ -18,4 +18,8 @@ class String
   def last
     self[-1]
   end
+
+  def shuffle
+    self.chars.shuffle.join
+  end
 end

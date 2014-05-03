@@ -30,4 +30,9 @@ describe "String Class" do
     expect("Hello".last).to eq "o"
     expect("".last).to eq nil
   end
+
+  it "#shuffle" do
+    word = "Hello"
+    expect(word.shuffle.chars.sort).to eq word.chars.sort
+  end
 end
