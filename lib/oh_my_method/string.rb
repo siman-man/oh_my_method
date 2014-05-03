@@ -20,6 +20,10 @@ class String
   end
 
   def shuffle
-    self.chars.shuffle.join
+    if RUBY_VERSION < "2.0"
+      self.split('').shuffle.join
+    else
+      self.chars.shuffle.join
+    end
   end
 end
