@@ -1,4 +1,11 @@
 class Hash
+  # Convert Hash into Object( like javascript )
+  #
+  # color = { red: 254, green: 177, blue: 100 }.to_obj
+  #
+  # color.red     #=> 254
+  # color.green   #=> 177
+  # color.blue    #=> 100
   def to_obj
     obj = Object.new
 
