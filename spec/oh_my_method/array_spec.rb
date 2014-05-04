@@ -13,4 +13,11 @@ describe "Array Class" do
     expect(dup.class).to eq Enumerator
     expect(dup.to_a).to eq langs
   end
+
+  it "#mean" do
+    array = (1..100).to_a
+
+    mean = array.mean
+    expect(mean).to eq 50.5
+  end
 end

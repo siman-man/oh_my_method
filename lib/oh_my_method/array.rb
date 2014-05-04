@@ -8,4 +8,8 @@ class Array
 
     res
   end
+
+  def mean
+    inject(:+)/size.to_f
+  end
 end
