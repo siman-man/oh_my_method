@@ -46,4 +46,15 @@ describe "String Class" do
     word = ""
     expect(word.include_lower?).to eq false
   end
+
+  it "#include_upper?" do
+    word = "Hello"
+    expect(word.include_upper?).to eq true
+
+    word = "hello"
+    expect(word.include_upper?).to eq false
+
+    word = ""
+    expect(word.include_upper?).to eq false
+  end
 end

@@ -56,4 +56,8 @@ class String
   def include_lower?
     !!(self =~ /[a-z]/)
   end
+
+  def include_upper?
+    !!(self =~ /[A-Z]/)
+  end
 end
