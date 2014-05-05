@@ -52,4 +52,8 @@ class String
       self.chars.shuffle.join
     end
   end
+
+  def include_lower?
+    !!(self =~ /[a-z]/)
+  end
 end

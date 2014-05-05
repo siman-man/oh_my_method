@@ -35,4 +35,15 @@ describe "String Class" do
     word = "Hello"
     expect(word.shuffle.chars.sort).to eq word.chars.sort
   end
+
+  it "#include_lower?" do
+    word = "Hello"
+    expect(word.include_lower?).to eq true
+
+    word = "HELLO"
+    expect(word.include_lower?).to eq false
+
+    word = ""
+    expect(word.include_lower?).to eq false
+  end
 end
