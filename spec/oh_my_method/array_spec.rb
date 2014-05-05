@@ -20,4 +20,16 @@ describe "Array Class" do
     mean = array.mean
     expect(mean).to eq 50.5
   end
+
+  it "#median" do
+    array = (1..5).to_a
+
+    median = array.median
+    expect(median).to eq 3
+
+    array = (1..6).to_a
+
+    median = array.median
+    expect(median).to eq 3.5
+  end
 end

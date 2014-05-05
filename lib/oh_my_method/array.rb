@@ -24,4 +24,14 @@ class Array
   def mean
     inject(:+)/size.to_f
   end
+
+  def median
+    sort!
+
+    if size % 2 == 0
+      (at(size/2-1) + at(size/2)) / 2.0
+    else
+      at(size/2)
+    end
+  end
 end
